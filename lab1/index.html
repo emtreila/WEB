@@ -1,0 +1,208 @@
+<!-- Create a single HTML web page for a subject you like (e.g. personal home page, photo collection, movie stars, cars
+etc.). You can NOT use any CSS or Javascript on your web page! Only basic HTML language. The web page should be HTML5
+valid. You will have to use the following HTML tags in your web page: 
+<img>,<a>,<table>,<br>,<hr>,<p>,<b>,<div>,<ul>, <li>,<section>,<article>,<footer>,<header>,<aside>,<nav>, 
+<svg>,<audio>,<video>,<figure>,<figurecaption>,<main> 
+Also you should specify the type of document using <!Doctype>. 
+The page must be at least one screen long and at most 2 screens long (using a resolution of 1024x768 pixels). 
+The textual content of the page should be relevant to the chosen subject (not "lorem ipsum" text). 
+This single web page can be edited using any editor you want and can be presented on any browser you prefer. 
+
+<aside>
+
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="Description" content="Simple figure skating page" />
+    <title>Figure Skating</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Figure Skating</h1>
+        <p>Elegance, grace, precision, and skill come together in one of the most popular sports. Here's everything you
+            need to know about figure skating.</p>
+    </header>
+
+    <hr />
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#equipment">Equipment</a> |
+        <a href="#elements">Elements and Moves</a> |
+        <a href="#competition">Competition Format and Scoring</a> |
+        <a href="#music">Music and Clothing</a>
+    </nav>
+
+    <hr />
+
+    <main>
+
+        <section id="about">
+            <h2>About Figure Skating</h2>
+            <article>
+                <p>
+                    Figure skating is a sport in which individuals, pairs, or groups perform on figure skates on ice. It
+                    was <b>the first winter sport to be included in the Olympic Games</b>, with its introduction
+                    occurring at the 1908 Olympics in London. The Olympic disciplines are men's singles, women's
+                    singles, pair skating, and ice dance; the four individual disciplines are also <b>combined into a
+                        team event</b>, which was first included in the Winter Olympics in 2014.
+                </p>
+                <figure>
+                    <img src="photo2.jpeg" alt="Figure skaters on ice" width="400" height="300" />
+                    <figcaption>Figure skaters performing during a competition.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <br />
+
+        <section id="equipment">
+            <h2>Equipment</h2>
+            <article>
+                <p>
+                    Figure skating equipment centers on specialized boots and blades designed for support, speed, and
+                    artistic movement. Key gear includes stiff leather or synthetic boots for ankle stability, blades
+                    with toe picks for jumps and spins, protective hard guards for walking off-ice, and soft soakers to
+                    prevent rust.
+                </p>
+                <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Figure Skates</b></td>
+                            <td>The boots are stiff to support the ankle, while the blades are hollow-ground with two
+                                edges (inside/outside) for precise control.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Toe Picks</b></td>
+                            <td>The serrated, saw-toothed front part of the blade used for jumps (e.g., Lutz) and
+                                spins.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Blade Guards (Hard Guards)</b></td>
+                            <td>Plastic guards worn when walking off the ice to protect blades from damage.</td>
+                        </tr>
+                        <tr>
+                            <td><b>Soakers (Soft Guards)</b></td>
+                            <td>Fabric covers that absorb moisture from the blades after wiping, preventing rust during
+                                storage.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="elements">
+            <h2>Elements and Moves</h2>
+            <article>
+                <p>Figure skating elements comprise the technical components performed in programs, divided primarily
+                    into:</p>
+
+                <br />
+
+                <div>
+                    <h3>Spins</h3>
+                    <ul>
+                        <li><b>Upright Spins:</b> Includes scratch spins, layback, Biellmann (holding the blade over
+                            the head), and haircutter positions.</li>
+                        <li><b>Sit Spins:</b> Includes standard, cannonball, and pancake variations.</li>
+                        <li><b>Camel Spins:</b> Includes standard, catch-foot, and donut spins.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <br />
+
+        <section id="competition">
+            <h2>Competition Format and Scoring</h2>
+            <article>
+                <p>The Program Components Score (PCS) awards points to holistic aspects of a program. The components
+                    are:</p>
+                <ul>
+                    <li><b>Composition:</b> Evaluates how the program is designed in relation to the music; how
+                        elements are connected; how space is used; how choreography reflects musical phrase and
+                        form.</li>
+                    <li><b>Presentation:</b> Evaluates how the program is performed; what the skater expresses and
+                        projects; musical sensitivity and timing.</li>
+                    <li><b>Skating Skills:</b> Assesses the skater's command of the blade, including power, ease,
+                        variety of edges, balance, body control, turns, steps, flow, and speed.</li>
+                </ul>
+
+                <h3>Score Example:</h3>
+                <svg width="400" height="30">
+                    <rect x="0" y="10" width="240" height="20" fill="blue" />
+                    <text x="5" y="25" fill="white" font-size="12">120.90 points</text>
+                </svg>
+            </article>
+        </section>
+
+        <br />
+
+        <section id="music">
+            <h2>Music and Clothing</h2>
+            <article>
+                <h3>Music</h3>
+                <p>Skaters may use professional music editors so that their music meets requirements. Ice dancers are
+                    required to skate to music that has a definite beat or rhythm. Singles and pair skaters more often
+                    skate to the melody and phrasing of their music. For long programs, figure skaters generally search
+                    for music with different moods and tempos. Music selections for exhibitions are less constrained
+                    than for competitive programs.</p>
+                <audio controls>
+                    <source src="music.mp3" />
+                </audio>
+
+                <br /><br />
+
+                <h3>Costumes</h3>
+                <p>Competition costumes vary widely, from simple designs to heavily beaded or trimmed costumes. Skaters
+                    risk a deduction if a piece of their costume falls onto the ice surface. Skaters and family members
+                    may design their own costumes, sometimes with assistance from their coach or choreographer, or turn
+                    to professional designers. Costumes may cost thousands of dollars if designed by a top-level
+                    costume maker.</p>
+                <video controls>
+                    <source src="skating_clip.mp4" />
+                </video>
+            </article>
+        </section>
+
+    </main>
+
+    <hr />
+
+    <aside>
+        <h2>More information:</h2>
+        <ul>
+            <li>It's the oldest winter game.</li>
+            <li>Skates used to be made of animal bones.</li>
+            <li>Ice dancing grew out of the waltz.</li>
+            <li>Skaters cannot use props during competition.</li>
+        </ul>
+    </aside>
+
+    <hr />
+
+    <footer>
+        <p>
+            Sources:
+            <a href="https://en.wikipedia.org/wiki/Figure_skating#Music_and_clothing" target="_blank">Wikipedia</a> |
+            <a href="https://www.olympics.com/en/milano-cortina-2026/sports/figure-skating" target="_blank">Olympics</a>
+            |
+            <a href="https://www.mentalfloss.com/sports/15-surprising-facts-about-figure-skating"
+                target="_blank">More information</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
