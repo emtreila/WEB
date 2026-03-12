@@ -1,0 +1,189 @@
+<!-- Develop an html+css web document that looks like the following web page: https://www.msn.com/. 
+ You should clone about one screen of this web page (not the whole web page) and your html document should 
+ look approximately 90% as the given web page. No interactivity should be added (e.g. javascript, :hover effects etc.)
+ and you are not allowed to use any css or javascript library. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MSN news page">
+    <title>MSN | Personalized News, Top Headlines, Live Updates and more</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <img id="header_logo" src="logo.png" alt="MSN logo">
+
+        <div id="search_bar">
+            <img id="search_icon" src="search_icon.png" alt="search">
+            <input type="text" placeholder="Search the web">
+            <img id="search_bar_logo" src="copilot_logo.png" alt="Copilot">
+        </div>
+
+        <div id="weather_widget">
+            <p id="weather_city">Cluj-Napoca</p>
+            <img id="weather_logo" src="weather_logo.png" alt="weather">
+            <p id="weather_temp">18°C</p>
+        </div>
+
+        <img id="settings_icon" src="settings_icon.png" alt="settings">
+        <button id="sign_in_button">Sign in</button>
+    </header>
+
+    <div id="shortcuts">
+        <div id="shortcut_outlook">
+            <img src="outlook_icon.png" alt="Outlook">
+            <p>Outlook.com</p>
+        </div>
+        <div id="shortcut_facebook">
+            <img src="facebook_icon.png" alt="Facebook">
+            <p>Facebook</p>
+        </div>
+        <div id="shortcut_microsoft365">
+            <img src="microsoft365_icon.jpg" alt="Microsoft 365">
+            <p>Microsoft 365</p>
+        </div>
+        <div id="shortcut_x">
+            <img src="x_icon.jpg" alt="X">
+            <p>X</p>
+        </div>
+        <div id="shortcut_skype">
+            <img src="skype_icon.png" alt="Skype">
+            <p>Skype</p>
+        </div>
+        <div id="shortcut_microsoft_store">
+            <img src="microsoft_store_icon.png" alt="Microsoft Store">
+            <p>Microsoft Store</p>
+        </div>
+        <div id="shortcut_onedrive">
+            <img src="onedrive_icon.jpg" alt="OneDrive">
+            <p>OneDrive</p>
+        </div>
+    </div>
+
+    <nav id="nav_bar">
+        <div id="nav_links">
+            <a id="nav_discover"><b>Discover</b></a>
+            <a id="nav_sports">Sports</a>
+            <a id="nav_play">Play</a>
+            <a id="nav_money">Money</a>
+            <a id="nav_weather">Weather</a>
+            <a id="nav_watch">Watch</a>
+        </div>
+
+        <button id="nav_personalize">
+            <img id="star_icon" src="star_icon.png" alt="star">
+            Personalize
+        </button>
+    </nav>
+
+    <div id="content_grid">
+
+        <div id="card_main">
+            <img id="card_main_img" src="news1.jpg" alt="news image">
+            <div id="card_main_info">
+                <div id="card_main_source">
+                    <img id="card_main_source_icon" src="starsinsider_icon.png" alt="source">
+                    <p id="card_main_source_name">StarsInsider</p>
+                </div>
+                <p id="card_main_title">Countries with the most submarines</p>
+                <div id="card_main_actions">
+                    <img src="like_icon_white.png" alt="like"> <span>1k</span>
+                    <img src="dislike_icon_white.png" alt="dislike">
+                </div>
+            </div>
+        </div>
+
+        <div id="card_mid_top">
+            <img id="card_mid_top_img" src="news2.jpg" alt="news image">
+            <div id="card_mid_top_info">
+                <div id="card_mid_top_source_row">
+                    <img id="card_mid_top_source_icon" src="starsinsider_icon.png" alt="source">
+                    <p id="card_mid_top_source">StarsInsider 19h</p>
+                </div>
+                <p id="card_mid_top_title">Countries and territories connected to more than one ocean</p>
+                <div id="card_mid_top_actions">
+                    <img src="like_icon.png" alt="like"> <span>261</span>
+                    <img src="dislike_icon.png" alt="dislike">
+                </div>
+            </div>
+        </div>
+
+        <div id="top_stories">
+            <div id="top_stories_header">
+                <span id="top_stories_title">🔥 Top stories</span>
+                <span id="top_stories_more">···</span>
+            </div>
+            <div id="story_1">
+                <div id="story_1_text">
+                    <div id="card_mid_top_source_row">
+                        <img id="card_mid_top_source_icon" src="daily_mail_icon.png" alt="source">
+                        <p id="story_1_source">Daily Mail 8h</p>
+                    </div>
+                    <p id="story_1_title">Tourist attractions hit out at 'misleading' weather apps that are 'costing
+                        them millions'</p>
+                </div>
+                <img id="story_1_img" src="story1.jpg" alt="story">
+            </div>
+            <div id="story_2">
+                <div id="story_2_text">
+                    <div id="card_mid_top_source_row">
+                        <img id="card_mid_top_source_icon" src="chosunblino_icon.png" alt="source">
+                        <p id="story_2_source">THE CHOSUNILBO 6h</p>
+                    </div>
+                    <p id="story_2_title">Meta acquires AI-only social network Moltbook</p>
+                </div>
+                <img id="story_2_img" src="story2.jpg" alt="story">
+            </div>
+            <div id="story_3">
+                <div id="story_3_text">
+                    <div id="card_mid_top_source_row">
+                        <img id="card_mid_top_source_icon" src="punch_icon.png" alt="source">
+                        <p id="story_3_source">The Punch 2h</p>
+                    </div>
+                    <p id="story_3_title">Emotional Osimhen grabs assist as Turkish champions beat Reds</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="card_bottom_left">
+            <img id="card_bottom_left_img" src="news3.jpg" alt="news image">
+            <div id="card_bottom_left_info">
+                <div id="card_bottom_left_source_row">
+                    <img id="card_bottom_left_source_icon" src="starsinsider_icon.png" alt="source">
+                    <p id="card_bottom_left_source">StarsInsider</p>
+                </div>
+                <p id="card_bottom_left_title">The most dangerous creatures beneath the waves
+                </p>
+                <div id="card_main_actions">
+                    <img src="like_icon_white.png" alt="like"> <span>780</span>
+                    <img src="dislike_icon_white.png" alt="dislike">
+                </div>
+            </div>
+        </div>
+
+        <div id="card_bottom_right">
+            <img id="card_bottom_right_img" src="news4.jpg" alt="news image">
+            <div id="card_bottom_right_info">
+                <div id="card_bottom_right_source_row">
+                    <img id="card_bottom_right_source_icon" src="daily_mail_icon.png" alt="source">
+                    <p id="card_bottom_right_source">Daily Mail</p>
+                </div>
+                <p id="card_bottom_right_title">Mysterious 'dragon' species that lived 95 million years ago discovered
+                    in Sahara Desert
+                </p>
+                <div id="card_main_actions">
+                    <img src="like_icon_white.png" alt="like"> <span>427</span>
+                    <img src="dislike_icon_white.png" alt="dislike">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

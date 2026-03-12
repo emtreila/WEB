@@ -1,0 +1,451 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 64px;
+    padding-left: 24px;
+}
+
+#header_logo {
+    height: 45px;
+    width: auto;
+    margin-right: 170px;
+}
+
+#search_bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 780px;
+    margin-top: 10px;
+    margin-left: 80px;
+    border: 1px solid lightgrey;
+    border-radius: 24px;
+    padding: 7px 14px;
+    background-color: white;
+    height: 35px;
+}
+
+#search_icon {
+    height: 20px;
+    width: 20px;
+    padding-right: 16px;
+}
+
+#search_bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    color: grey;
+    background: transparent;
+}
+
+#search_bar_logo {
+    height: 26px;
+    width: 26px;
+}
+
+#weather_widget {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+#weather_city {
+    font-size: 16px;
+    color: #333;
+}
+
+#weather_logo {
+    height: 20px;
+    width: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#weather_temp {
+    font-size: 14px;
+    color: grey;
+    font-weight: 500;
+}
+
+#settings_icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+
+#sign_in_button {
+    border: 1px solid lightgrey;
+    padding: 14px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 16px;
+    background: white;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+#shortcuts {
+    display: flex;
+    margin-left: 390px;
+    gap: 45px;
+    padding-top: 20px;
+}
+
+#shortcut_outlook,
+#shortcut_facebook,
+#shortcut_microsoft365,
+#shortcut_x,
+#shortcut_skype,
+#shortcut_microsoft_store,
+#shortcut_onedrive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#shortcut_outlook img,
+#shortcut_facebook img,
+#shortcut_microsoft365 img,
+#shortcut_x img,
+#shortcut_skype img,
+#shortcut_microsoft_store img,
+#shortcut_onedrive img {
+    height: 28px;
+    width: 28px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+}
+
+#shortcut_outlook p,
+#shortcut_facebook p,
+#shortcut_microsoft365 p,
+#shortcut_x p,
+#shortcut_skype p,
+#shortcut_microsoft_store p,
+#shortcut_onedrive p {
+    font-size: 12px;
+    color: grey;
+    margin-top: -15px;
+}
+
+#nav_bar {
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#nav_links {
+    display: flex;
+    gap: 12px;
+}
+
+#nav_links a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+#nav_discover {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    color: blue !important;
+}
+
+#nav_personalize {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 6px 14px;
+    background: white;
+    font-size: 14px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-left: 450px;
+}
+
+#star_icon {
+    width: 16px;
+    height: 16px;
+}
+
+#content_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 16px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#card_main {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: black;
+    min-height: 380px;
+}
+
+#card_main_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+#card_main_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+}
+
+#card_main_source {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+#card_main_source_icon {
+    width: 16px;
+    height: 16px;
+}
+
+#card_main_source_name,
+#card_main_title {
+    margin: 0;
+    color: white;
+}
+
+#card_main_source_name {
+    font-size: 12px;
+}
+
+#card_main_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#card_main_actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    font-size: 13px;
+}
+
+#card_mid_top {
+    grid-column: 3 / 4;
+    grid-row: 1;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+#card_mid_top_img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+#card_mid_top_info {
+    padding: 12px;
+}
+
+#card_mid_top_source_row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+#card_mid_top_source_icon {
+    width: 14px;
+    height: 14px;
+}
+
+#card_mid_top_source {
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+}
+
+#card_mid_top_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 0 0 8px 0;
+}
+
+#card_mid_top_actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: gray;
+}
+
+#top_stories {
+    grid-column: 4 / 5;
+    grid-row: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid lightgrey;
+}
+
+#top_stories_header {
+    display: flex;
+    justify-content: space-between; 
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+#story_1,
+#story_2,
+#story_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-top: 1px solid white;
+}
+
+#story_1_source,
+#story_2_source,
+#story_3_source {
+    font-size: 11px;
+    color: grey;
+    margin: 0 0 4px 0;
+}
+
+#story_1_title,
+#story_2_title,
+#story_3_title {
+    font-size: 13px;
+    color: #333;
+    margin: 0;
+}
+
+#story_1_text,
+#story_2_text,
+#story_3_text {
+    flex: 1;
+}
+
+#story_1_img,
+#story_2_img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+#card_bottom_left {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+    min-height: 300px;
+}
+
+#card_bottom_right {
+    grid-column: 3 / 5;
+    grid-row: 2;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: black;
+    min-height: 300px;
+}
+
+#card_bottom_left_img,
+#card_bottom_right_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+#card_bottom_left_info,
+#card_bottom_right_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+}
+
+#card_bottom_left_source_row,
+#card_bottom_right_source_row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+#card_bottom_left_source_icon,
+#card_bottom_right_source_icon {
+    width: 16px;
+    height: 16px;
+}
+
+#card_bottom_left_source,
+#card_bottom_right_source,
+#card_bottom_left_title,
+#card_bottom_right_title {
+    margin: 0;
+    color: white;
+}
+
+#card_bottom_left_source,
+#card_bottom_right_source {
+    font-size: 12px;
+}
+
+#card_bottom_left_title,
+#card_bottom_right_title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#card_main_actions img,
+#card_mid_top_actions img,
+#card_bottom_left_actions img,
+#card_bottom_right_actions img {
+    width: 16px;
+    height: 16px;
+}
