@@ -1,0 +1,78 @@
+html {
+    background-color: rgb(253, 231, 253);
+
+}
+
+#mainContainer {
+    height: 300px;
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: purple;
+}
+
+#c0,
+#c1,
+#c3,
+#c4,
+#c6,
+#c7 {
+    border-right: 10px solid purple;
+}
+
+#c3,
+#c4,
+#c5,
+#c6,
+#c7,
+#c8 {
+    border-top: 10px solid purple;
+}
+
+#outsideContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#status {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: purple;
+}
+
+#restart {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(249, 185, 249);
+    border-color: purple;
+    border-radius: 20px;
+    position: relative;
+    top: 500px;
+}
+
+#button_label {
+    font-family: 'Courier New', Courier, monospace;
+    color: purple;
+    font-size: 15px;
+}
